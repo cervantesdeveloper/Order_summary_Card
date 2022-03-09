@@ -5,33 +5,68 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Order summary card</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
+    .attribution { font-size: 11px; text-align: center; position: fixed; bottom: 1rem;  width: 100%;}
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
+
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+  <main>
+    <div class="card-summary">
+      <div class="card-summary__hero">
+        <img src="images/illustration-hero.svg" alt="Young person listening to the music">
+      </div>
+      <div class="card-summary__body">
+        <div class="card-summary__heading">
+          <h6>Order Summary</h6>
+        </div>
 
-  Order Summary
+        <div class="card-summary__description">
+          <p>You can now listen to millions of songs, audiobooks, and podcasts on any 
+            device anywhere you like!</p>
+        </div>
 
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
+        <div class="price">
+          <div class="price__image">
+            <img src="images/icon-music.svg" alt="musical note">
+          </div>
 
-  Annual Plan
-  $59.99/year
-
-  Change
-
-  Proceed to Payment
-  Cancel Order
+          <div class="price__text">
+            <div class="price__number">
+              <p>Annual Plan</p>
+              <p><span>$59.99/year</span></p>
+            </div>
   
+            <div class="price__option">
+              <a href="#">Change</a>
+            </div>
+          </div>
+          
+        </div>
+
+        <div class="btn cta">
+          Proceed to Payment
+        </div>
+
+        <div class="btn">
+          Cancel Order
+        </div>
+
+      </div>
+    </div>
+  </main>
+
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/cervantesdeveloper" target="_blanck">Cervantes Developer</a>.
   </div>
 </body>
 </html>
